@@ -25,6 +25,8 @@
         <module>zk-waiter-service</module>
         <module>consul-customer-service</module>
         <module>consul-waiter-service</module>
+        <module>nacos-customer-service</module>
+        <module>nacos-waiter-service</module>
     </modules>
 
 
