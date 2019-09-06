@@ -19,7 +19,7 @@ import java.time.Duration;
 @SpringBootApplication
 @EnableDiscoveryClient
 @Slf4j
-public class ConsulCustomerServiceApplication implements ApplicationRunner {
+public class ConsulCustomerServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ConsulCustomerServiceApplication.class, args);
@@ -33,34 +33,6 @@ public class ConsulCustomerServiceApplication implements ApplicationRunner {
                 .setReadTimeout(Duration.ofMillis(500))
 //				.requestFactory(this::requestFactory)
                 .build();
-    }
-
-    @Autowired
-    private RestTemplate restTemplate;
-
-    @Autowired
-    private DiscoveryClient discoveryClient;
-
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-        showServiceInstance();
-        readFromRemote();
-    }
-
-
-    /**
-     * 展示服务实例
-     */
-    private void showServiceInstance(){
-        log.info("DiscoveryClient: {}", discoveryClient.getClass().getName());
-        discoveryClient.getInstances("wait-service").forEach(serviceInstance -> {
-            log.info("[server host:{}  server port:{}]", serviceInstance.getHost(), serviceInstance.getPort());
-        });
-    }
-
-    private void readFromRemote(){
-        ResponseEntity<String> responseEntity = restTemplate.getForEntity("http://wait-service/car/100", String.class);
-        log.info(responseEntity.getBody());
     }
 
 
