@@ -27,6 +27,7 @@
         <module>consul-waiter-service</module>
         <module>nacos-customer-service</module>
         <module>nacos-waiter-service</module>
+        <module>fix-customer-discovery-client</module>
     </modules>
 
 
