@@ -21,6 +21,10 @@
         <module>eureka-waiter-service</module>
         <module>ribbon-customer-service</module>
         <module>feign-customer-service</module>
+        <module>zk-customer-service</module>
+        <module>zk-waiter-service</module>
+        <module>consul-customer-service</module>
+        <module>consul-waiter-service</module>
     </modules>
 
 
