@@ -17,10 +17,10 @@ public class FixCustomerDiscoveryClientApplication {
 	}
 
 
-	@Bean
-	public FixCustomerDiscoveryClient fixCustomerDiscoveryClient(){
-		return new FixCustomerDiscoveryClient();
-	}
+//	@Bean
+//	public FixCustomerDiscoveryClient fixCustomerDiscoveryClient(){
+//		return new FixCustomerDiscoveryClient();
+//	}
 
 	@Bean
 	public FixCustomerServerList fixCustomerServerList(){

@@ -5,11 +5,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.client.DefaultServiceInstance;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 @ConfigurationProperties("waiter")
 @Setter
 public class FixCustomerDiscoveryClient implements DiscoveryClient {
