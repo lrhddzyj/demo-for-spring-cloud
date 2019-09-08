@@ -28,6 +28,12 @@
         <module>nacos-customer-service</module>
         <module>nacos-waiter-service</module>
         <module>fix-customer-discovery-client</module>
+        <module>hystrix-customer-service</module>
+        <module>customer-circuit-break-demo</module>
+        <module>git-config-service</module>
+        <module>git-config-client-service</module>
+
+
     </modules>
 
 
