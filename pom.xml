@@ -32,6 +32,7 @@
         <module>customer-circuit-break-demo</module>
         <module>git-config-service</module>
         <module>git-config-client-service</module>
+        <module>zk-config-service</module>
 
 
     </modules>
