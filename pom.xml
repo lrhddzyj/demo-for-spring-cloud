@@ -33,6 +33,7 @@
         <module>git-config-service</module>
         <module>git-config-client-service</module>
         <module>zk-config-service</module>
+        <module>rabbitmq-barista2-service</module>
 
 
     </modules>
