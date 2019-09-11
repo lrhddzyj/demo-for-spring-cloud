@@ -20,8 +20,12 @@ public class CarController {
 
     @GetMapping("/send")
     public void sendMessage(){
-        Message message = MessageBuilder.withPayload(UUID.randomUUID()).build();
+        Message message = MessageBuilder.withPayload(UUID.randomUUID())
+//                .setHeader("customer","customer")
+                .build();
+
         log.info("send result {}",barista.newOrder().send(message));
+
     }
 
 }
